@@ -4,7 +4,7 @@ import json
 
 def main():
     if len(sys.argv) < 2:
-        print("No file provided")
+        print("No file provided", end="")
         return
 
     file_path = sys.argv[1]
@@ -13,7 +13,7 @@ def main():
             data = f.read()
         health_data = json.loads(data)
     except Exception as e:
-        print("Error parsing input JSON")
+        print("Error parsing input JSON", end="")
         return
 
     overall_health = health_data.get("overallHealth", 100)
@@ -25,8 +25,8 @@ def main():
         recommendation = "Backup Data Immediately"
     else:
         recommendation = "Drive is healthy"
-    
-    print(recommendation)
+
+    print(recommendation, end="")  # Ensure no extra newline
 
 if __name__ == "__main__":
     main()

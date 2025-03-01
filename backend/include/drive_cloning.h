@@ -2,35 +2,35 @@
 #define DRIVE_CLONING_H
 
 #include <string>
+#include <functional>
 
 /**
  * @brief Structure representing the result of a drive cloning operation.
  */
 struct DriveCloningResult {
-    bool success;           ///< True if cloning was successful.
-    std::string details;    ///< Detailed outcome message.
-    double durationSeconds; ///< Time taken for the cloning operation.
+    bool success;
+    std::string details;
+    double durationSeconds;
 };
 
 /**
  * @brief The DriveCloning class encapsulates functions to clone drives or partitions.
- *
- * In a production environment, this module would call system utilities (e.g., dd or Clonezilla)
- * to perform bit-for-bit cloning. Here, we simulate the cloning process.
  */
 class DriveCloning {
 public:
     /**
-     * @brief Clones a drive or partition from a source to a destination.
-     *
-     * @param sourceDrive The name or identifier of the source drive (e.g., "sda").
-     * @param destinationDrive The name or identifier of the destination drive (e.g., "sdb").
-     * @param dryRun If true, simulates the cloning process without making changes.
-     * @param interactive If true, prompts the user for confirmation before proceeding.
-     * @return A DriveCloningResult structure with the outcome of the cloning operation.
+     * @brief Clones a drive or partition from source to destination.
+     * 
+     * @param sourceDrive Source drive identifier.
+     * @param destinationDrive Destination drive identifier.
+     * @param progressCallback Callback to report progress (0.0 to 100.0).
+     * @param dryRun If true, simulates the operation.
+     * @param interactive If true, prompts user for confirmation.
+     * @return DriveCloningResult with outcome.
      */
     static DriveCloningResult cloneDrive(const std::string &sourceDrive,
                                            const std::string &destinationDrive,
+                                           std::function<void(double)> progressCallback,
                                            bool dryRun = false,
                                            bool interactive = false);
 };

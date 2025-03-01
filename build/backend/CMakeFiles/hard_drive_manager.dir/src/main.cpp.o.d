@@ -157,4 +157,10 @@ backend/CMakeFiles/hard_drive_manager.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/vector.tcc \
  /home/rukn/hard-drive-manager-fresh/backend/include/scanning.h \
  /home/rukn/hard-drive-manager-fresh/backend/include/drive_detection.h \
+ /home/rukn/hard-drive-manager-fresh/backend/include/drive_health_monitor.h \
+ /home/rukn/hard-drive-manager-fresh/backend/include/drive_repair.h \
+ /home/rukn/hard-drive-manager-fresh/backend/include/partitioning_formatting.h \
+ /home/rukn/hard-drive-manager-fresh/backend/include/drive_cloning.h \
+ /home/rukn/hard-drive-manager-fresh/backend/include/ai_recommendation.h \
+ /home/rukn/hard-drive-manager-fresh/backend/include/drive_health_monitor.h \
  /home/rukn/hard-drive-manager-fresh/backend/include/logging_reporting.h
