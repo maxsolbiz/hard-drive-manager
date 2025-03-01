@@ -1,0 +1,8 @@
+/home/rukn/hard-drive-manager-fresh/build/CMakeFiles/edit_cache.dir
+/home/rukn/hard-drive-manager-fresh/build/CMakeFiles/rebuild_cache.dir
+/home/rukn/hard-drive-manager-fresh/build/backend/CMakeFiles/hard_drive_manager_lib.dir
+/home/rukn/hard-drive-manager-fresh/build/backend/CMakeFiles/hard_drive_manager.dir
+/home/rukn/hard-drive-manager-fresh/build/backend/CMakeFiles/runTests.dir
+/home/rukn/hard-drive-manager-fresh/build/backend/CMakeFiles/health_monitor_main.dir
+/home/rukn/hard-drive-manager-fresh/build/backend/CMakeFiles/edit_cache.dir
+/home/rukn/hard-drive-manager-fresh/build/backend/CMakeFiles/rebuild_cache.dir

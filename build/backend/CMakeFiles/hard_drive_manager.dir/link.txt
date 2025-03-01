@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/hard_drive_manager.dir/src/main.cpp.o -o hard_drive_manager  libhard_drive_manager_lib.a /usr/lib/x86_64-linux-gnu/libsqlite3.so 

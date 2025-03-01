@@ -1,0 +1,27 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/hard_drive_manager_lib.dir/src/ai_recommendation.cpp.o"
+  "CMakeFiles/hard_drive_manager_lib.dir/src/ai_recommendation.cpp.o.d"
+  "CMakeFiles/hard_drive_manager_lib.dir/src/drive_cloning.cpp.o"
+  "CMakeFiles/hard_drive_manager_lib.dir/src/drive_cloning.cpp.o.d"
+  "CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection.cpp.o"
+  "CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection.cpp.o.d"
+  "CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor.cpp.o"
+  "CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor.cpp.o.d"
+  "CMakeFiles/hard_drive_manager_lib.dir/src/drive_repair.cpp.o"
+  "CMakeFiles/hard_drive_manager_lib.dir/src/drive_repair.cpp.o.d"
+  "CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_main.cpp.o"
+  "CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_main.cpp.o.d"
+  "CMakeFiles/hard_drive_manager_lib.dir/src/logging_reporting.cpp.o"
+  "CMakeFiles/hard_drive_manager_lib.dir/src/logging_reporting.cpp.o.d"
+  "CMakeFiles/hard_drive_manager_lib.dir/src/partitioning_formatting.cpp.o"
+  "CMakeFiles/hard_drive_manager_lib.dir/src/partitioning_formatting.cpp.o.d"
+  "CMakeFiles/hard_drive_manager_lib.dir/src/scanning.cpp.o"
+  "CMakeFiles/hard_drive_manager_lib.dir/src/scanning.cpp.o.d"
+  "libhard_drive_manager_lib.a"
+  "libhard_drive_manager_lib.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/hard_drive_manager_lib.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
