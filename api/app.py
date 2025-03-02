@@ -1,9 +1,12 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, WebSocket, HTTPException
 from pydantic import BaseModel
+import asyncio
 import json
 import subprocess
 
 app = FastAPI(title="Drive Health Recommendation API")
+
+# AI Recommendation Model Endpoint
 
 class HealthMetrics(BaseModel):
     driveName: str
@@ -14,9 +17,8 @@ class HealthMetrics(BaseModel):
     smartStatus: str
 
 def get_recommendation_from_model(health_json: str) -> str:
-    # Call the ai_model.py script and pass the JSON file path.
-    # For simplicity, we'll assume the script is in the same directory.
     try:
+        # Call the ai_model.py script with the JSON data passed as an argument.
         result = subprocess.run(
             ["python3", "ai_model.py", health_json],
             stdout=subprocess.PIPE,
@@ -30,14 +32,19 @@ def get_recommendation_from_model(health_json: str) -> str:
 
 @app.post("/recommendation")
 def recommendation(metrics: HealthMetrics):
-    # Convert the input to JSON string.
     health_json = metrics.json()
     recommendation_text = get_recommendation_from_model(health_json)
     return {"recommendation": recommendation_text}
 
-@app.get("/")
-def read_root():
-    return {"message": "Welcome to the Drive Health Recommendation API"}
+# WebSocket Endpoint for real-time updates
 
-# Define your other endpoints, e.g., /recommendation
-# ...
+@app.websocket("/ws")
+async def websocket_endpoint(websocket: WebSocket):
+    await websocket.accept()
+    try:
+        while True:
+            # For demonstration, send a heartbeat message every 5 seconds.
+            await websocket.send_text("Heartbeat: update from API")
+            await asyncio.sleep(5)
+    except Exception as e:
+        print("WebSocket error:", e)
