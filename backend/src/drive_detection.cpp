@@ -25,7 +25,7 @@ static void logMessage(const std::string &level, const std::string &message) {
 //=========================================================================
 // JSON Output for DriveInfo
 //-------------------------------------------------------------------------
-std::string DriveInfo::toJson() const {
+/*std::string DriveInfo::toJson() const {
     std::ostringstream oss;
     oss << "{"
         << "\"name\":\"" << name << "\","
@@ -36,7 +36,7 @@ std::string DriveInfo::toJson() const {
         << "\"serial\":\"" << serial << "\""
         << "}";
     return oss.str();
-}
+}*/
 
 //=========================================================================
 // Helper Functions

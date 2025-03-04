@@ -6,15 +6,15 @@
 int main() {
     uWS::Hub h;
 
-    h.onConnection([](uWS::WebSocket<uWS::SERVER> *ws, uWS::HttpRequest req) {
+    h.onConnection([](uWS::WebSocket<uWS::SERVER>* ws, uWS::HttpRequest req) {
         std::cout << "Client connected" << std::endl;
+        ws->send("Test message: connection established", uWS::OpCode::TEXT);
     });
 
-    h.onDisconnection([](uWS::WebSocket<uWS::SERVER> *ws, int code, char *message, size_t length) {
+    h.onDisconnection([](uWS::WebSocket<uWS::SERVER>* ws, int code, char* message, size_t length) {
         std::cout << "Client disconnected" << std::endl;
     });
 
-    // Broadcast heartbeat every 5 seconds.
     std::thread([&h]() {
         while (true) {
             std::this_thread::sleep_for(std::chrono::seconds(5));

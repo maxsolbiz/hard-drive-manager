@@ -1,10 +1,11 @@
+// frontend/src/index.js
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css'; // This is critical!
+import { createRoot } from 'react-dom/client';
 import App from './App';
+import './styles/tailwind.css'; // Ensure this file is present
 
 const container = document.getElementById('root');
-const root = ReactDOM.createRoot(container);
+const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <App />

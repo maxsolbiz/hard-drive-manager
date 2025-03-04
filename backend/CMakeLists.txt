@@ -17,7 +17,7 @@ add_library(hard_drive_manager_lib ${BACKEND_SOURCES})
 # Include header files directory
 target_include_directories(hard_drive_manager_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-# Link pthreads (or Threads library) if necessary
+# Link Threads library
 find_package(Threads REQUIRED)
 target_link_libraries(hard_drive_manager_lib Threads::Threads)
 
@@ -28,6 +28,13 @@ if(SQLITE3_LIBRARY)
 else()
     message(FATAL_ERROR "SQLite3 library not found!")
 endif()
+
+# Use pkg-config to find JsonCpp
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(JSONCPP REQUIRED jsoncpp)
+include_directories(${JSONCPP_INCLUDE_DIRS})
+link_directories(${JSONCPP_LIBRARY_DIRS})
+target_link_libraries(hard_drive_manager_lib ${JSONCPP_LIBRARIES})
 
 # Create the main executable from main.cpp only
 add_executable(hard_drive_manager src/main.cpp)
@@ -48,11 +55,10 @@ if(TEST_SOURCES)
     # Also add the tests directory so that common helper headers are found.
     target_include_directories(runTests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/tests)
     # Link the library that contains the core modules, plus GTest and Threads
-    target_link_libraries(runTests hard_drive_manager_lib ${GTEST_LIBRARIES} Threads::Threads)
+    target_link_libraries(runTests hard_drive_manager_lib ${GTEST_LIBRARIES} Threads::Threads ${JSONCPP_LIBRARIES})
     add_test(NAME runTests COMMAND runTests)
 endif()
 
 # Build the Health Monitoring test executable
 add_executable(health_monitor_main src/health_monitor_main.cpp)
 target_link_libraries(health_monitor_main hard_drive_manager_lib)
-

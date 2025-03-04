@@ -4,16 +4,17 @@
 
 TEST(DriveCloningTest, CloneDryRunSuccess) {
     // For testing, we simulate cloning from "dummySource" to "dummyDestination".
-    DriveCloningResult result = DriveCloning::cloneDrive("dummySource", "dummyDestination", true, false);
+    // Pass an empty lambda as the progress callback.
+    DriveCloningResult result = DriveCloning::cloneDrive("dummySource", "dummyDestination", [](double progress) {}, true, false);
     EXPECT_TRUE(result.success);
     EXPECT_EQ(result.details, "Dry-run: Drive cloning simulated successfully.");
 }
 
 TEST(DriveCloningTest, CloneInteractiveCancel) {
     // In interactive mode, manual testing might be needed.
-    // For automated testing, you might disable interactive mode.
-    // Here, we assume interactive mode is off.
-    DriveCloningResult result = DriveCloning::cloneDrive("dummySource", "dummyDestination", false, false);
+    // For automated testing, assume interactive mode is off.
+    // Pass an empty lambda as the progress callback.
+    DriveCloningResult result = DriveCloning::cloneDrive("dummySource", "dummyDestination", [](double progress) {}, false, false);
     EXPECT_TRUE(result.success);
     EXPECT_EQ(result.details, "Drive cloning completed successfully.");
 }
