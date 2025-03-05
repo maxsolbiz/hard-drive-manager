@@ -5,6 +5,15 @@ project(HardDriveManager)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Add FetchContent for nlohmann/json
+include(FetchContent)
+FetchContent_Declare(
+  json
+  GIT_REPOSITORY https://github.com/nlohmann/json.git
+  GIT_TAG v3.11.2  # or update to your desired version
+)
+FetchContent_MakeAvailable(json)
+
 # Collect all source files in the src folder
 file(GLOB_RECURSE BACKEND_SOURCES "src/*.cpp")
 
@@ -29,7 +38,7 @@ else()
     message(FATAL_ERROR "SQLite3 library not found!")
 endif()
 
-# Use pkg-config to find JsonCpp
+# Use pkg-config to find JsonCpp (if needed)
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(JSONCPP REQUIRED jsoncpp)
 include_directories(${JSONCPP_INCLUDE_DIRS})
@@ -39,6 +48,11 @@ target_link_libraries(hard_drive_manager_lib ${JSONCPP_LIBRARIES})
 # Create the main executable from main.cpp only
 add_executable(hard_drive_manager src/main.cpp)
 target_link_libraries(hard_drive_manager hard_drive_manager_lib)
+
+# Create a standalone executable for full SMART details (health_monitor_full)
+add_executable(health_monitor_full src/health_monitor_full.cpp)
+target_link_libraries(health_monitor_full hard_drive_manager_lib)
+target_include_directories(health_monitor_full PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Enable testing
 enable_testing()
@@ -52,9 +66,7 @@ file(GLOB_RECURSE TEST_SOURCES "tests/*.cpp")
 if(TEST_SOURCES)
     add_executable(runTests ${TEST_SOURCES})
     target_include_directories(runTests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
-    # Also add the tests directory so that common helper headers are found.
     target_include_directories(runTests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/tests)
-    # Link the library that contains the core modules, plus GTest and Threads
     target_link_libraries(runTests hard_drive_manager_lib ${GTEST_LIBRARIES} Threads::Threads ${JSONCPP_LIBRARIES})
     add_test(NAME runTests COMMAND runTests)
 endif()

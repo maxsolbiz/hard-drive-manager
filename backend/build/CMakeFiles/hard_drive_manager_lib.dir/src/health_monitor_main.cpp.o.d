@@ -2,6 +2,7 @@ CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_main.cpp.o: \
  /home/rukn/hard-drive-manager-fresh/backend/src/health_monitor_main.cpp \
  /usr/include/stdc-predef.h \
  /home/rukn/hard-drive-manager-fresh/backend/include/drive_health_monitor.h \
+ /home/rukn/hard-drive-manager-fresh/backend/include/drive_info.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -116,7 +117,6 @@ CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_main.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /home/rukn/hard-drive-manager-fresh/backend/include/drive_info.h \
  /usr/include/c++/13/sstream /usr/include/c++/13/istream \
  /usr/include/c++/13/ios /usr/include/c++/13/exception \
  /usr/include/c++/13/bits/exception_ptr.h \

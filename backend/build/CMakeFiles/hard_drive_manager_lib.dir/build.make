@@ -111,10 +111,24 @@ CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rukn/hard-drive-manager-fresh/backend/src/drive_detection.cpp -o CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection.cpp.s
 
+CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection_.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/flags.make
+CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection_.cpp.o: /home/rukn/hard-drive-manager-fresh/backend/src/drive_detection_.cpp
+CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection_.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection_.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection_.cpp.o -MF CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection_.cpp.o.d -o CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection_.cpp.o -c /home/rukn/hard-drive-manager-fresh/backend/src/drive_detection_.cpp
+
+CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection_.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection_.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rukn/hard-drive-manager-fresh/backend/src/drive_detection_.cpp > CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection_.cpp.i
+
+CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection_.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection_.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rukn/hard-drive-manager-fresh/backend/src/drive_detection_.cpp -o CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection_.cpp.s
+
 CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/flags.make
 CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor.cpp.o: /home/rukn/hard-drive-manager-fresh/backend/src/drive_health_monitor.cpp
 CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor.cpp.o -MF CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor.cpp.o.d -o CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor.cpp.o -c /home/rukn/hard-drive-manager-fresh/backend/src/drive_health_monitor.cpp
 
 CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor.cpp.s: cmake_forc
 CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor_.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/flags.make
 CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor_.cpp.o: /home/rukn/hard-drive-manager-fresh/backend/src/drive_health_monitor_.cpp
 CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor_.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor_.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor_.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor_.cpp.o -MF CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor_.cpp.o.d -o CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor_.cpp.o -c /home/rukn/hard-drive-manager-fresh/backend/src/drive_health_monitor_.cpp
 
 CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor_.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor_.cpp.s: cmake_for
 CMakeFiles/hard_drive_manager_lib.dir/src/drive_repair.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/flags.make
 CMakeFiles/hard_drive_manager_lib.dir/src/drive_repair.cpp.o: /home/rukn/hard-drive-manager-fresh/backend/src/drive_repair.cpp
 CMakeFiles/hard_drive_manager_lib.dir/src/drive_repair.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/hard_drive_manager_lib.dir/src/drive_repair.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/hard_drive_manager_lib.dir/src/drive_repair.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hard_drive_manager_lib.dir/src/drive_repair.cpp.o -MF CMakeFiles/hard_drive_manager_lib.dir/src/drive_repair.cpp.o.d -o CMakeFiles/hard_drive_manager_lib.dir/src/drive_repair.cpp.o -c /home/rukn/hard-drive-manager-fresh/backend/src/drive_repair.cpp
 
 CMakeFiles/hard_drive_manager_lib.dir/src/drive_repair.cpp.i: cmake_force
@@ -153,10 +167,24 @@ CMakeFiles/hard_drive_manager_lib.dir/src/drive_repair.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/hard_drive_manager_lib.dir/src/drive_repair.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rukn/hard-drive-manager-fresh/backend/src/drive_repair.cpp -o CMakeFiles/hard_drive_manager_lib.dir/src/drive_repair.cpp.s
 
+CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_full.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/flags.make
+CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_full.cpp.o: /home/rukn/hard-drive-manager-fresh/backend/src/health_monitor_full.cpp
+CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_full.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_full.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_full.cpp.o -MF CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_full.cpp.o.d -o CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_full.cpp.o -c /home/rukn/hard-drive-manager-fresh/backend/src/health_monitor_full.cpp
+
+CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_full.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_full.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rukn/hard-drive-manager-fresh/backend/src/health_monitor_full.cpp > CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_full.cpp.i
+
+CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_full.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_full.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rukn/hard-drive-manager-fresh/backend/src/health_monitor_full.cpp -o CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_full.cpp.s
+
 CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_main.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/flags.make
 CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_main.cpp.o: /home/rukn/hard-drive-manager-fresh/backend/src/health_monitor_main.cpp
 CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_main.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_main.cpp.o -MF CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_main.cpp.o.d -o CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_main.cpp.o -c /home/rukn/hard-drive-manager-fresh/backend/src/health_monitor_main.cpp
 
 CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_main.cpp.i: cmake_force
@@ -170,7 +198,7 @@ CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_main.cpp.s: cmake_force
 CMakeFiles/hard_drive_manager_lib.dir/src/logging_reporting.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/flags.make
 CMakeFiles/hard_drive_manager_lib.dir/src/logging_reporting.cpp.o: /home/rukn/hard-drive-manager-fresh/backend/src/logging_reporting.cpp
 CMakeFiles/hard_drive_manager_lib.dir/src/logging_reporting.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/hard_drive_manager_lib.dir/src/logging_reporting.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/hard_drive_manager_lib.dir/src/logging_reporting.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hard_drive_manager_lib.dir/src/logging_reporting.cpp.o -MF CMakeFiles/hard_drive_manager_lib.dir/src/logging_reporting.cpp.o.d -o CMakeFiles/hard_drive_manager_lib.dir/src/logging_reporting.cpp.o -c /home/rukn/hard-drive-manager-fresh/backend/src/logging_reporting.cpp
 
 CMakeFiles/hard_drive_manager_lib.dir/src/logging_reporting.cpp.i: cmake_force
@@ -184,7 +212,7 @@ CMakeFiles/hard_drive_manager_lib.dir/src/logging_reporting.cpp.s: cmake_force
 CMakeFiles/hard_drive_manager_lib.dir/src/main_old.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/flags.make
 CMakeFiles/hard_drive_manager_lib.dir/src/main_old.cpp.o: /home/rukn/hard-drive-manager-fresh/backend/src/main_old.cpp
 CMakeFiles/hard_drive_manager_lib.dir/src/main_old.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/hard_drive_manager_lib.dir/src/main_old.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/hard_drive_manager_lib.dir/src/main_old.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hard_drive_manager_lib.dir/src/main_old.cpp.o -MF CMakeFiles/hard_drive_manager_lib.dir/src/main_old.cpp.o.d -o CMakeFiles/hard_drive_manager_lib.dir/src/main_old.cpp.o -c /home/rukn/hard-drive-manager-fresh/backend/src/main_old.cpp
 
 CMakeFiles/hard_drive_manager_lib.dir/src/main_old.cpp.i: cmake_force
@@ -198,7 +226,7 @@ CMakeFiles/hard_drive_manager_lib.dir/src/main_old.cpp.s: cmake_force
 CMakeFiles/hard_drive_manager_lib.dir/src/partitioning_formatting.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/flags.make
 CMakeFiles/hard_drive_manager_lib.dir/src/partitioning_formatting.cpp.o: /home/rukn/hard-drive-manager-fresh/backend/src/partitioning_formatting.cpp
 CMakeFiles/hard_drive_manager_lib.dir/src/partitioning_formatting.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/hard_drive_manager_lib.dir/src/partitioning_formatting.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/hard_drive_manager_lib.dir/src/partitioning_formatting.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hard_drive_manager_lib.dir/src/partitioning_formatting.cpp.o -MF CMakeFiles/hard_drive_manager_lib.dir/src/partitioning_formatting.cpp.o.d -o CMakeFiles/hard_drive_manager_lib.dir/src/partitioning_formatting.cpp.o -c /home/rukn/hard-drive-manager-fresh/backend/src/partitioning_formatting.cpp
 
 CMakeFiles/hard_drive_manager_lib.dir/src/partitioning_formatting.cpp.i: cmake_force
@@ -212,7 +240,7 @@ CMakeFiles/hard_drive_manager_lib.dir/src/partitioning_formatting.cpp.s: cmake_f
 CMakeFiles/hard_drive_manager_lib.dir/src/scanning.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/flags.make
 CMakeFiles/hard_drive_manager_lib.dir/src/scanning.cpp.o: /home/rukn/hard-drive-manager-fresh/backend/src/scanning.cpp
 CMakeFiles/hard_drive_manager_lib.dir/src/scanning.cpp.o: CMakeFiles/hard_drive_manager_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/hard_drive_manager_lib.dir/src/scanning.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/hard_drive_manager_lib.dir/src/scanning.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hard_drive_manager_lib.dir/src/scanning.cpp.o -MF CMakeFiles/hard_drive_manager_lib.dir/src/scanning.cpp.o.d -o CMakeFiles/hard_drive_manager_lib.dir/src/scanning.cpp.o -c /home/rukn/hard-drive-manager-fresh/backend/src/scanning.cpp
 
 CMakeFiles/hard_drive_manager_lib.dir/src/scanning.cpp.i: cmake_force
@@ -228,9 +256,11 @@ hard_drive_manager_lib_OBJECTS = \
 "CMakeFiles/hard_drive_manager_lib.dir/src/ai_recommendation.cpp.o" \
 "CMakeFiles/hard_drive_manager_lib.dir/src/drive_cloning.cpp.o" \
 "CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection.cpp.o" \
+"CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection_.cpp.o" \
 "CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor.cpp.o" \
 "CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor_.cpp.o" \
 "CMakeFiles/hard_drive_manager_lib.dir/src/drive_repair.cpp.o" \
+"CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_full.cpp.o" \
 "CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_main.cpp.o" \
 "CMakeFiles/hard_drive_manager_lib.dir/src/logging_reporting.cpp.o" \
 "CMakeFiles/hard_drive_manager_lib.dir/src/main_old.cpp.o" \
@@ -243,9 +273,11 @@ hard_drive_manager_lib_EXTERNAL_OBJECTS =
 libhard_drive_manager_lib.a: CMakeFiles/hard_drive_manager_lib.dir/src/ai_recommendation.cpp.o
 libhard_drive_manager_lib.a: CMakeFiles/hard_drive_manager_lib.dir/src/drive_cloning.cpp.o
 libhard_drive_manager_lib.a: CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection.cpp.o
+libhard_drive_manager_lib.a: CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection_.cpp.o
 libhard_drive_manager_lib.a: CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor.cpp.o
 libhard_drive_manager_lib.a: CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor_.cpp.o
 libhard_drive_manager_lib.a: CMakeFiles/hard_drive_manager_lib.dir/src/drive_repair.cpp.o
+libhard_drive_manager_lib.a: CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_full.cpp.o
 libhard_drive_manager_lib.a: CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_main.cpp.o
 libhard_drive_manager_lib.a: CMakeFiles/hard_drive_manager_lib.dir/src/logging_reporting.cpp.o
 libhard_drive_manager_lib.a: CMakeFiles/hard_drive_manager_lib.dir/src/main_old.cpp.o
@@ -253,7 +285,7 @@ libhard_drive_manager_lib.a: CMakeFiles/hard_drive_manager_lib.dir/src/partition
 libhard_drive_manager_lib.a: CMakeFiles/hard_drive_manager_lib.dir/src/scanning.cpp.o
 libhard_drive_manager_lib.a: CMakeFiles/hard_drive_manager_lib.dir/build.make
 libhard_drive_manager_lib.a: CMakeFiles/hard_drive_manager_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library libhard_drive_manager_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/rukn/hard-drive-manager-fresh/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX static library libhard_drive_manager_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/hard_drive_manager_lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hard_drive_manager_lib.dir/link.txt --verbose=$(VERBOSE)
 

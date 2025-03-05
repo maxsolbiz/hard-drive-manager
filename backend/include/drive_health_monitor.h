@@ -1,18 +1,30 @@
-// drive_health_monitor.h
 #ifndef DRIVE_HEALTH_MONITOR_H
 #define DRIVE_HEALTH_MONITOR_H
 
+#include "drive_info.h"
 #include <string>
-#include "drive_info.h"  // If DriveInfo is defined here
 
+// Structure to hold drive health metrics.
 struct DriveHealthInfo {
     std::string driveName;
-    double temperature;
-    int readErrorCount;
-    int writeErrorCount;
-    double overallHealth;
-    std::string smartStatus;
+    double temperature;            // e.g., Temperature in Celsius
+    int readErrorCount;            // e.g., Number of read errors
+    int writeErrorCount;           // e.g., Number of write errors
+    double overallHealth;          // Composite health metric (can be computed)
+    std::string smartStatus;       // e.g., "PASSED" or "FAILED"
     
+    // Additional SMART attributes (RAW_VALUE as integer):
+    int reallocatedSectorCount;
+    int powerOnHours;
+    int powerCycleCount;
+    int wearLevelingCount;
+    int unexpectedPowerLossCount;
+    int uncorrectableErrorCount;
+    int mediaWearoutIndicator;
+    int totalLBAsWritten;
+    int totalLBAsRead;
+    int nandWrites1GiB;
+
     std::string toJson() const;
 };
 
@@ -21,4 +33,4 @@ public:
     static DriveHealthInfo getHealthMetrics(const DriveInfo &drive);
 };
 
-#endif
+#endif // DRIVE_HEALTH_MONITOR_H

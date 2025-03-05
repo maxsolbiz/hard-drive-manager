@@ -1,68 +1,100 @@
-// backend/src/drive_health_monitor.cpp
-
 #include "drive_health_monitor.h"
-#include <sstream>
-#include <thread>        // For std::this_thread
-#include <chrono>        // For std::chrono
-#include <iomanip>
 #include "logging_reporting.h"
-#include <cstdio>        // For popen, fgets, pclose
+#include "drive_info.h"  // Contains the definition of DriveInfo
+#include <sstream>
+#include <thread>
+#include <chrono>
+#include <iomanip>
+#include <cstdio>
 #include <cstring>
-#include <utility>
+#include <vector>
+#include <string>
 #include <iostream>
 #include <stdexcept>
 
-// Helper function to fetch SMART data using smartctl command and parse temperature and overall status.
-static std::pair<std::string, double> fetchSmartData(const std::string &devicePath) {
-    // Use "smartctl -A" to get all SMART attributes.
-    std::string command = "smartctl -A " + devicePath;
+// Helper function to execute a command and return its output as a string.
+static std::string execCommand(const std::string &command) {
     FILE* pipe = popen(command.c_str(), "r");
     if (!pipe) {
-        return { "UNKNOWN", -1.0 };
+        throw std::runtime_error("popen() failed!");
     }
     char buffer[256];
-    std::string output = "";
+    std::string result;
     while (fgets(buffer, sizeof(buffer), pipe) != nullptr) {
-        output += buffer;
+        result += buffer;
     }
     pclose(pipe);
+    return result;
+}
 
-    // Determine overall health status (by checking for "PASSED" or "FAILED")
-    std::string status = "UNKNOWN";
-    if (output.find("PASSED") != std::string::npos) {
-        status = "PASSED";
-    } else if (output.find("FAILED") != std::string::npos) {
-        status = "FAILED";
-    }
-
-    // Parse temperature: look for "Temperature_Celsius" in the output.
-    double temperature = -1.0;
-    size_t pos = output.find("Temperature_Celsius");
-    if (pos != std::string::npos) {
-        // Extract the line containing the temperature attribute.
-        size_t endLine = output.find("\n", pos);
-        std::string line = output.substr(pos, endLine - pos);
-        // Tokenize the line by whitespace.
-        std::istringstream iss(line);
-        std::string token;
-        int tokenIndex = 0;
-        double tempValue = -1.0;
-        while (iss >> token) {
-            tokenIndex++;
-            // For example, assume the temperature is in the 6th token.
-            if (tokenIndex == 6) {
-                try {
-                    tempValue = std::stod(token);
-                } catch (std::invalid_argument &) {
-                    tempValue = -1.0;
-                }
-                break;
+// Helper to parse overall SMART status from smartctl output.
+static std::string parseOverallStatus(const std::string &output) {
+    std::istringstream iss(output);
+    std::string line;
+    while (std::getline(iss, line)) {
+        if (line.find("SMART overall-health self-assessment test result:") != std::string::npos) {
+            size_t pos = line.find(":");
+            if (pos != std::string::npos) {
+                std::string status = line.substr(pos + 1);
+                // Trim whitespace.
+                status.erase(0, status.find_first_not_of(" \t"));
+                status.erase(status.find_last_not_of(" \t\r\n") + 1);
+                return status;
             }
         }
-        temperature = tempValue;
     }
-    
-    return { status, temperature };
+    if (output.find("PASSED") != std::string::npos)
+        return "PASSED";
+    else if (output.find("FAILED") != std::string::npos)
+        return "FAILED";
+    return "UNKNOWN";
+}
+
+// Fixed-token parser: Given a line that contains the attribute name,
+// this function tokenizes the line and returns the token at index 'tokenIndex'.
+// If the token isn't found, returns an empty string.
+static std::string getTokenFromLine(const std::string &line, int tokenIndex) {
+    std::istringstream iss(line);
+    std::string token;
+    for (int i = 0; i <= tokenIndex; i++) {
+        if (!(iss >> token))
+            return "";
+    }
+    return token;
+}
+
+// Fixed-token helper to parse an integer attribute from smartctl output.
+static int parseAttributeFixed(const std::string &output, const std::string &attrName, int tokenIndex = 9) {
+    std::istringstream iss(output);
+    std::string line;
+    while (std::getline(iss, line)) {
+        if (line.find(attrName) != std::string::npos) {
+            std::string rawValue = getTokenFromLine(line, tokenIndex);
+            try {
+                return std::stoi(rawValue);
+            } catch (const std::invalid_argument &) {
+                return -1;
+            }
+        }
+    }
+    return -1;
+}
+
+// Fixed-token helper to parse a double attribute (e.g., temperature) from smartctl output.
+static double parseTemperatureFixed(const std::string &output, const std::string &attrName, int tokenIndex = 9) {
+    std::istringstream iss(output);
+    std::string line;
+    while (std::getline(iss, line)) {
+        if (line.find(attrName) != std::string::npos) {
+            std::string rawValue = getTokenFromLine(line, tokenIndex);
+            try {
+                return std::stod(rawValue);
+            } catch (const std::invalid_argument &) {
+                return -1.0;
+            }
+        }
+    }
+    return -1.0;
 }
 
 std::string DriveHealthInfo::toJson() const {
@@ -73,7 +105,17 @@ std::string DriveHealthInfo::toJson() const {
         << "\"readErrorCount\":" << readErrorCount << ","
         << "\"writeErrorCount\":" << writeErrorCount << ","
         << "\"overallHealth\":" << overallHealth << ","
-        << "\"smartStatus\":\"" << smartStatus << "\""
+        << "\"smartStatus\":\"" << smartStatus << "\","
+        << "\"reallocatedSectorCount\":" << reallocatedSectorCount << ","
+        << "\"powerOnHours\":" << powerOnHours << ","
+        << "\"powerCycleCount\":" << powerCycleCount << ","
+        << "\"wearLevelingCount\":" << wearLevelingCount << ","
+        << "\"unexpectedPowerLossCount\":" << unexpectedPowerLossCount << ","
+        << "\"uncorrectableErrorCount\":" << uncorrectableErrorCount << ","
+        << "\"mediaWearoutIndicator\":" << mediaWearoutIndicator << ","
+        << "\"totalLBAsWritten\":" << totalLBAsWritten << ","
+        << "\"totalLBAsRead\":" << totalLBAsRead << ","
+        << "\"nandWrites1GiB\":" << nandWrites1GiB
         << "}";
     return oss.str();
 }
@@ -82,21 +124,41 @@ DriveHealthInfo DriveHealthMonitor::getHealthMetrics(const DriveInfo &drive) {
     DriveHealthInfo info;
     info.driveName = drive.name;
 
-    // Optional: simulate delay for real-time measurement.
+    // Simulate a delay.
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
 
-    // Fetch real SMART data using smartctl.
-    auto smartData = fetchSmartData("/dev/" + drive.name);
-    info.smartStatus = smartData.first;
-    info.temperature = smartData.second;
+    // Execute smartctl to fetch SMART attributes.
+    std::string command = "smartctl -A /dev/" + drive.name;
+    std::string output;
+    try {
+        output = execCommand(command);
+    } catch (const std::exception &ex) {
+        std::cerr << "Error executing smartctl: " << ex.what() << std::endl;
+        output = "";
+    }
 
-    // TODO: Enhance parsing to extract actual readErrorCount, writeErrorCount, and overallHealth.
-    // For now, we set them as dummy values if not parsed.
-    info.readErrorCount = 0;
-    info.writeErrorCount = 0;
+    // Parse overall SMART status.
+    info.smartStatus = parseOverallStatus(output);
+
+    // Parse temperature.
+    info.temperature = parseTemperatureFixed(output, "Temperature_Celsius", 9);
+
+    // Parse additional SMART attributes.
+    info.reallocatedSectorCount = parseAttributeFixed(output, "Reallocated_Sector_Ct", 9);
+    info.powerOnHours = parseAttributeFixed(output, "Power_On_Hours", 9);
+    info.powerCycleCount = parseAttributeFixed(output, "Power_Cycle_Count", 9);
+    info.wearLevelingCount = parseAttributeFixed(output, "Wear_Leveling_Count", 9);
+    info.unexpectedPowerLossCount = parseAttributeFixed(output, "Unexpect_Power_Loss_Ct", 9);
+    info.uncorrectableErrorCount = parseAttributeFixed(output, "Uncorrectable_Error_Cnt", 9);
+    info.mediaWearoutIndicator = parseAttributeFixed(output, "Media_Wearout_Indicator", 9);
+    info.totalLBAsWritten = parseAttributeFixed(output, "Total_LBAs_Written", 9);
+    info.totalLBAsRead = parseAttributeFixed(output, "Total_LBAs_Read", 9);
+    info.nandWrites1GiB = parseAttributeFixed(output, "NAND_Writes_1GiB", 9);
+
+    // For overallHealth, you can compute a composite metric; for now, we use a dummy value.
     info.overallHealth = 98.0;
 
-    // Log the health check operation.
+    // Log the health check.
     LoggingReporting::logOperation(drive.name, "HealthCheck", "Real-time health metrics retrieved.", 0.5);
 
     return info;

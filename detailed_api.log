@@ -1,0 +1,277 @@
+INFO:     Will watch for changes in these directories: ['/home/rukn/hard-drive-manager-fresh']
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+INFO:     Started reloader process [1721655] using StatReload
+INFO:     Started server process [1721658]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Using executable path: /home/rukn/hard-drive-manager-fresh/api/../backend/build/health_monitor_full
+Using working directory: /home/rukn/hard-drive-manager-fresh/api/../backend/build
+Return Code: 0
+STDOUT: Checking health of all attached hard drives...
+{
+    "drives": [
+        {
+            "device": "/dev/sda",
+            "device_model": "     SAMSUNG MZ7TY256HDHP-000L7",
+            "drive_type": "SSD",
+            "firmware_version": " MAT04L6Q",
+            "form_factor": "      2.5 inches",
+            "health_status": " PASSED",
+            "model_family": "     Samsung based SSDs",
+            "pending_sectors": "",
+            "power_on_hours": "56289",
+            "reallocated_sectors": "0",
+            "rotation_rate": "    Solid State Device",
+            "sector_size": "      512 bytes logical/physical",
+            "serial_number": "    S307NY0J321902",
+            "temperature": "37",
+            "total_lbas_read": "21422",
+            "total_lbas_written": "27016",
+            "uncorrectable_sectors": "",
+            "user_capacity": "    256,060,514,304 bytes [256 GB]"
+        },
+        {
+            "device": "/dev/sdb",
+            "device_model": "     ST500DM002-1BD142",
+            "drive_type": "HDD",
+            "firmware_version": " HP73",
+            "form_factor": "",
+            "health_status": " PASSED",
+            "model_family": "     Seagate Barracuda 7200.14 (AF)",
+            "pending_sectors": "0",
+            "power_on_hours": "23557",
+            "reallocated_sectors": "112",
+            "rotation_rate": "    7200 rpm",
+            "sector_size": "",
+            "serial_number": "    Z3TBW93W",
+            "temperature": "46",
+            "total_lbas_read": "",
+            "total_lbas_written": "",
+            "uncorrectable_sectors": "0",
+            "user_capacity": "    500,107,862,016 bytes [500 GB]"
+        },
+        {
+            "device": "/dev/sdc",
+            "device_model": "     TOSHIBA MQ01ABF050",
+            "drive_type": "HDD",
+            "firmware_version": " AM0P1D",
+            "form_factor": "      2.5 inches",
+            "health_status": " PASSED",
+            "model_family": "     Toshiba 2.5\" HDD MQ01ABF...",
+            "pending_sectors": "",
+            "power_on_hours": "158",
+            "reallocated_sectors": "0",
+            "rotation_rate": "    5400 rpm",
+            "sector_size": "",
+            "serial_number": "    64J8SMB7S",
+            "temperature": "44",
+            "total_lbas_read": "1487911658",
+            "total_lbas_written": "2526528110",
+            "uncorrectable_sectors": "",
+            "user_capacity": "    500,107,862,016 bytes [500 GB]"
+        },
+        {
+            "device": "/dev/sdd",
+            "device_model": "     Hitachi HTS545025B9A300",
+            "drive_type": "HDD",
+            "firmware_version": " PB2OC64G",
+            "form_factor": "      2.5 inches",
+            "health_status": " PASSED",
+            "model_family": "     Hitachi Travelstar 5K500.B",
+            "pending_sectors": "0",
+            "power_on_hours": "5366",
+            "reallocated_sectors": "0",
+            "rotation_rate": "    5400 rpm",
+            "sector_size": "      512 bytes logical/physical",
+            "serial_number": "    100713PBN201CSGP5G1T",
+            "temperature": "39",
+            "total_lbas_read": "",
+            "total_lbas_written": "",
+            "uncorrectable_sectors": "0",
+            "user_capacity": "    250,059,350,016 bytes [250 GB]"
+        }
+    ]
+}
+STDERR: 
+INFO:     127.0.0.1:41940 - "GET /detailed-health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41940 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+Using executable path: /home/rukn/hard-drive-manager-fresh/api/../backend/build/health_monitor_full
+Using working directory: /home/rukn/hard-drive-manager-fresh/api/../backend/build
+Using executable path: /home/rukn/hard-drive-manager-fresh/api/../backend/build/health_monitor_full
+Using working directory: /home/rukn/hard-drive-manager-fresh/api/../backend/build
+Return Code: 0
+STDOUT: Checking health of all attached hard drives...
+{
+    "drives": [
+        {
+            "device": "/dev/sda",
+            "device_model": "     SAMSUNG MZ7TY256HDHP-000L7",
+            "drive_type": "SSD",
+            "firmware_version": " MAT04L6Q",
+            "form_factor": "      2.5 inches",
+            "health_status": " PASSED",
+            "model_family": "     Samsung based SSDs",
+            "pending_sectors": "",
+            "power_on_hours": "56289",
+            "reallocated_sectors": "0",
+            "rotation_rate": "    Solid State Device",
+            "sector_size": "      512 bytes logical/physical",
+            "serial_number": "    S307NY0J321902",
+            "temperature": "37",
+            "total_lbas_read": "21422",
+            "total_lbas_written": "27016",
+            "uncorrectable_sectors": "",
+            "user_capacity": "    256,060,514,304 bytes [256 GB]"
+        },
+        {
+            "device": "/dev/sdb",
+            "device_model": "     ST500DM002-1BD142",
+            "drive_type": "HDD",
+            "firmware_version": " HP73",
+            "form_factor": "",
+            "health_status": " PASSED",
+            "model_family": "     Seagate Barracuda 7200.14 (AF)",
+            "pending_sectors": "0",
+            "power_on_hours": "23557",
+            "reallocated_sectors": "112",
+            "rotation_rate": "    7200 rpm",
+            "sector_size": "",
+            "serial_number": "    Z3TBW93W",
+            "temperature": "46",
+            "total_lbas_read": "",
+            "total_lbas_written": "",
+            "uncorrectable_sectors": "0",
+            "user_capacity": "    500,107,862,016 bytes [500 GB]"
+        },
+        {
+            "device": "/dev/sdc",
+            "device_model": "     TOSHIBA MQ01ABF050",
+            "drive_type": "HDD",
+            "firmware_version": " AM0P1D",
+            "form_factor": "      2.5 inches",
+            "health_status": " PASSED",
+            "model_family": "     Toshiba 2.5\" HDD MQ01ABF...",
+            "pending_sectors": "",
+            "power_on_hours": "158",
+            "reallocated_sectors": "0",
+            "rotation_rate": "    5400 rpm",
+            "sector_size": "",
+            "serial_number": "    64J8SMB7S",
+            "temperature": "44",
+            "total_lbas_read": "1487911658",
+            "total_lbas_written": "2526528110",
+            "uncorrectable_sectors": "",
+            "user_capacity": "    500,107,862,016 bytes [500 GB]"
+        },
+        {
+            "device": "/dev/sdd",
+            "device_model": "     Hitachi HTS545025B9A300",
+            "drive_type": "HDD",
+            "firmware_version": " PB2OC64G",
+            "form_factor": "      2.5 inches",
+            "health_status": " PASSED",
+            "model_family": "     Hitachi Travelstar 5K500.B",
+            "pending_sectors": "0",
+            "power_on_hours": "5366",
+            "reallocated_sectors": "0",
+            "rotation_rate": "    5400 rpm",
+            "sector_size": "      512 bytes logical/physical",
+            "serial_number": "    100713PBN201CSGP5G1T",
+            "temperature": "39",
+            "total_lbas_read": "",
+            "total_lbas_written": "",
+            "uncorrectable_sectors": "0",
+            "user_capacity": "    250,059,350,016 bytes [250 GB]"
+        }
+    ]
+}
+STDERR: 
+INFO:     127.0.0.1:47010 - "GET /detailed-health HTTP/1.1" 200 OK
+Return Code: 0
+STDOUT: Checking health of all attached hard drives...
+{
+    "drives": [
+        {
+            "device": "/dev/sda",
+            "device_model": "     SAMSUNG MZ7TY256HDHP-000L7",
+            "drive_type": "SSD",
+            "firmware_version": " MAT04L6Q",
+            "form_factor": "      2.5 inches",
+            "health_status": " PASSED",
+            "model_family": "     Samsung based SSDs",
+            "pending_sectors": "",
+            "power_on_hours": "56289",
+            "reallocated_sectors": "0",
+            "rotation_rate": "    Solid State Device",
+            "sector_size": "      512 bytes logical/physical",
+            "serial_number": "    S307NY0J321902",
+            "temperature": "37",
+            "total_lbas_read": "21422",
+            "total_lbas_written": "27016",
+            "uncorrectable_sectors": "",
+            "user_capacity": "    256,060,514,304 bytes [256 GB]"
+        },
+        {
+            "device": "/dev/sdb",
+            "device_model": "     ST500DM002-1BD142",
+            "drive_type": "HDD",
+            "firmware_version": " HP73",
+            "form_factor": "",
+            "health_status": " PASSED",
+            "model_family": "     Seagate Barracuda 7200.14 (AF)",
+            "pending_sectors": "0",
+            "power_on_hours": "23557",
+            "reallocated_sectors": "112",
+            "rotation_rate": "    7200 rpm",
+            "sector_size": "",
+            "serial_number": "    Z3TBW93W",
+            "temperature": "46",
+            "total_lbas_read": "",
+            "total_lbas_written": "",
+            "uncorrectable_sectors": "0",
+            "user_capacity": "    500,107,862,016 bytes [500 GB]"
+        },
+        {
+            "device": "/dev/sdc",
+            "device_model": "     TOSHIBA MQ01ABF050",
+            "drive_type": "HDD",
+            "firmware_version": " AM0P1D",
+            "form_factor": "      2.5 inches",
+            "health_status": " PASSED",
+            "model_family": "     Toshiba 2.5\" HDD MQ01ABF...",
+            "pending_sectors": "",
+            "power_on_hours": "158",
+            "reallocated_sectors": "0",
+            "rotation_rate": "    5400 rpm",
+            "sector_size": "",
+            "serial_number": "    64J8SMB7S",
+            "temperature": "44",
+            "total_lbas_read": "1487911658",
+            "total_lbas_written": "2526528110",
+            "uncorrectable_sectors": "",
+            "user_capacity": "    500,107,862,016 bytes [500 GB]"
+        },
+        {
+            "device": "/dev/sdd",
+            "device_model": "     Hitachi HTS545025B9A300",
+            "drive_type": "HDD",
+            "firmware_version": " PB2OC64G",
+            "form_factor": "      2.5 inches",
+            "health_status": " PASSED",
+            "model_family": "     Hitachi Travelstar 5K500.B",
+            "pending_sectors": "0",
+            "power_on_hours": "5366",
+            "reallocated_sectors": "0",
+            "rotation_rate": "    5400 rpm",
+            "sector_size": "      512 bytes logical/physical",
+            "serial_number": "    100713PBN201CSGP5G1T",
+            "temperature": "39",
+            "total_lbas_read": "",
+            "total_lbas_written": "",
+            "uncorrectable_sectors": "0",
+            "user_capacity": "    250,059,350,016 bytes [250 GB]"
+        }
+    ]
+}
+STDERR: 
+INFO:     127.0.0.1:47026 - "GET /detailed-health HTTP/1.1" 200 OK

@@ -2,6 +2,7 @@ CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor.cpp.o: \
  /home/rukn/hard-drive-manager-fresh/backend/src/drive_health_monitor.cpp \
  /usr/include/stdc-predef.h \
  /home/rukn/hard-drive-manager-fresh/backend/include/drive_health_monitor.h \
+ /home/rukn/hard-drive-manager-fresh/backend/include/drive_info.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -116,7 +117,6 @@ CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /home/rukn/hard-drive-manager-fresh/backend/include/drive_info.h \
  /usr/include/c++/13/sstream /usr/include/c++/13/istream \
  /usr/include/c++/13/ios /usr/include/c++/13/exception \
  /usr/include/c++/13/bits/exception_ptr.h \
@@ -154,8 +154,14 @@ CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc /usr/include/c++/13/ostream \
  /usr/include/c++/13/bits/ostream.tcc \
  /usr/include/c++/13/bits/istream.tcc \
- /usr/include/c++/13/bits/sstream.tcc /usr/include/c++/13/thread \
- /usr/include/c++/13/bits/std_thread.h \
+ /usr/include/c++/13/bits/sstream.tcc \
+ /home/rukn/hard-drive-manager-fresh/backend/include/logging_reporting.h \
+ /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc \
+ /home/rukn/hard-drive-manager-fresh/backend/include/drive_info.h \
+ /usr/include/c++/13/thread /usr/include/c++/13/bits/std_thread.h \
  /usr/include/c++/13/bits/unique_ptr.h \
  /usr/include/c++/13/bits/this_thread_sleep.h \
  /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
@@ -172,11 +178,6 @@ CMakeFiles/hard_drive_manager_lib.dir/src/drive_health_monitor.cpp.o: \
  /usr/include/libintl.h /usr/include/c++/13/bits/codecvt.h \
  /usr/include/c++/13/bits/locale_facets_nonio.tcc \
  /usr/include/c++/13/bits/locale_conv.h \
- /usr/include/c++/13/bits/quoted_string.h \
- /home/rukn/hard-drive-manager-fresh/backend/include/logging_reporting.h \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
- /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/cstring \
- /usr/include/string.h /usr/include/strings.h /usr/include/c++/13/utility \
- /usr/include/c++/13/bits/stl_relops.h /usr/include/c++/13/iostream
+ /usr/include/c++/13/bits/quoted_string.h /usr/include/c++/13/cstring \
+ /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/13/iostream

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/health_monitor_full.dir/src/health_monitor_full.cpp.o -o health_monitor_full  libhard_drive_manager_lib.a /usr/lib/x86_64-linux-gnu/libsqlite3.so -ljsoncpp 

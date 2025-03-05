@@ -153,6 +153,19 @@ hard_drive_manager/fast:
 .PHONY : hard_drive_manager/fast
 
 #=============================================================================
+# Target rules for targets named health_monitor_full
+
+# Build rule for target.
+health_monitor_full: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 health_monitor_full
+.PHONY : health_monitor_full
+
+# fast build rule for target.
+health_monitor_full/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/health_monitor_full.dir/build.make CMakeFiles/health_monitor_full.dir/build
+.PHONY : health_monitor_full/fast
+
+#=============================================================================
 # Target rules for targets named runTests
 
 # Build rule for target.
@@ -250,6 +263,30 @@ src/drive_detection.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hard_drive_manager_lib.dir/build.make CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection.cpp.s
 .PHONY : src/drive_detection.cpp.s
 
+src/drive_detection_.o: src/drive_detection_.cpp.o
+.PHONY : src/drive_detection_.o
+
+# target to build an object file
+src/drive_detection_.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hard_drive_manager_lib.dir/build.make CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection_.cpp.o
+.PHONY : src/drive_detection_.cpp.o
+
+src/drive_detection_.i: src/drive_detection_.cpp.i
+.PHONY : src/drive_detection_.i
+
+# target to preprocess a source file
+src/drive_detection_.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hard_drive_manager_lib.dir/build.make CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection_.cpp.i
+.PHONY : src/drive_detection_.cpp.i
+
+src/drive_detection_.s: src/drive_detection_.cpp.s
+.PHONY : src/drive_detection_.s
+
+# target to generate assembly for a file
+src/drive_detection_.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hard_drive_manager_lib.dir/build.make CMakeFiles/hard_drive_manager_lib.dir/src/drive_detection_.cpp.s
+.PHONY : src/drive_detection_.cpp.s
+
 src/drive_health_monitor.o: src/drive_health_monitor.cpp.o
 .PHONY : src/drive_health_monitor.o
 
@@ -321,6 +358,33 @@ src/drive_repair.s: src/drive_repair.cpp.s
 src/drive_repair.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hard_drive_manager_lib.dir/build.make CMakeFiles/hard_drive_manager_lib.dir/src/drive_repair.cpp.s
 .PHONY : src/drive_repair.cpp.s
+
+src/health_monitor_full.o: src/health_monitor_full.cpp.o
+.PHONY : src/health_monitor_full.o
+
+# target to build an object file
+src/health_monitor_full.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hard_drive_manager_lib.dir/build.make CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_full.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/health_monitor_full.dir/build.make CMakeFiles/health_monitor_full.dir/src/health_monitor_full.cpp.o
+.PHONY : src/health_monitor_full.cpp.o
+
+src/health_monitor_full.i: src/health_monitor_full.cpp.i
+.PHONY : src/health_monitor_full.i
+
+# target to preprocess a source file
+src/health_monitor_full.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hard_drive_manager_lib.dir/build.make CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_full.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/health_monitor_full.dir/build.make CMakeFiles/health_monitor_full.dir/src/health_monitor_full.cpp.i
+.PHONY : src/health_monitor_full.cpp.i
+
+src/health_monitor_full.s: src/health_monitor_full.cpp.s
+.PHONY : src/health_monitor_full.s
+
+# target to generate assembly for a file
+src/health_monitor_full.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hard_drive_manager_lib.dir/build.make CMakeFiles/hard_drive_manager_lib.dir/src/health_monitor_full.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/health_monitor_full.dir/build.make CMakeFiles/health_monitor_full.dir/src/health_monitor_full.cpp.s
+.PHONY : src/health_monitor_full.cpp.s
 
 src/health_monitor_main.o: src/health_monitor_main.cpp.o
 .PHONY : src/health_monitor_main.o
@@ -672,6 +736,7 @@ help:
 	@echo "... test"
 	@echo "... hard_drive_manager"
 	@echo "... hard_drive_manager_lib"
+	@echo "... health_monitor_full"
 	@echo "... health_monitor_main"
 	@echo "... runTests"
 	@echo "... src/ai_recommendation.o"
@@ -683,6 +748,9 @@ help:
 	@echo "... src/drive_detection.o"
 	@echo "... src/drive_detection.i"
 	@echo "... src/drive_detection.s"
+	@echo "... src/drive_detection_.o"
+	@echo "... src/drive_detection_.i"
+	@echo "... src/drive_detection_.s"
 	@echo "... src/drive_health_monitor.o"
 	@echo "... src/drive_health_monitor.i"
 	@echo "... src/drive_health_monitor.s"
@@ -692,6 +760,9 @@ help:
 	@echo "... src/drive_repair.o"
 	@echo "... src/drive_repair.i"
 	@echo "... src/drive_repair.s"
+	@echo "... src/health_monitor_full.o"
+	@echo "... src/health_monitor_full.i"
+	@echo "... src/health_monitor_full.s"
 	@echo "... src/health_monitor_main.o"
 	@echo "... src/health_monitor_main.i"
 	@echo "... src/health_monitor_main.s"
