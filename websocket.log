@@ -1,1 +1,3 @@
 WebSocket server started on ws://localhost:9002
+Received signal 2. Shutting down gracefully...
+WebSocket server stopped.

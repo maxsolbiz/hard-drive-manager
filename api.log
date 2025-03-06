@@ -1,15 +1,290 @@
 INFO:     Will watch for changes in these directories: ['/home/rukn/hard-drive-manager-fresh']
 INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [1721654] using StatReload
-INFO:     Started server process [1721660]
+INFO:     Started reloader process [26864] using StatReload
+INFO:     Started server process [26892]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-INFO:     127.0.0.1:46324 - "GET /health/sda HTTP/1.1" 200 OK
-INFO:     127.0.0.1:46324 - "GET /favicon.ico HTTP/1.1" 404 Not Found
 Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
-INFO:     127.0.0.1:46324 - "GET /drives HTTP/1.1" 200 OK
-INFO:     127.0.0.1:46324 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33204 - "GET /drives HTTP/1.1" 200 OK
 Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
-INFO:     127.0.0.1:49168 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33204 - "GET /drives HTTP/1.1" 200 OK
 Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
-INFO:     127.0.0.1:49168 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35548 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:35548 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35648 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35648 - "GET /health/sda HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35648 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35648 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:35648 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35648 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:52190 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:52190 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:52190 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:52204 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55834 - "GET /detailed-health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55850 - "GET /detailed-health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55834 - "GET /detailed-health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55850 - "GET /detailed-health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57258 - "GET /detailed-health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57274 - "GET /detailed-health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57258 - "GET /detailed-health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57274 - "GET /detailed-health HTTP/1.1" 404 Not Found
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:41604 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41606 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:51266 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:57348 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57360 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36080 - "GET /detailed-health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36096 - "GET /detailed-health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36080 - "GET /detailed-health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36096 - "GET /detailed-health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37024 - "GET /detailed-health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37024 - "GET /detailed-health HTTP/1.1" 404 Not Found
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:44140 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:44140 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44142 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:59120 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:59120 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43978 - "GET /health/sda HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43978 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:43978 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43978 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:34814 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34824 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:34814 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:34824 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:34814 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:34824 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:33582 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33588 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:33582 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33588 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:33582 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:33588 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:33582 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:33588 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:44250 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44250 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:57516 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:57516 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:59772 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59772 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:59774 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59774 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:56158 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:56158 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:56158 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:56158 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:56158 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:56158 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:56158 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:56158 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:34448 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34448 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:34160 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:34160 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:37356 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:37356 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:42526 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:42526 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:46274 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46274 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:51752 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:38516 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:38516 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:59096 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59098 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:38608 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:38622 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:51492 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:51492 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:51492 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:51492 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:37416 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37426 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:37416 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37426 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:37536 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:37536 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:50686 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:50686 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:50686 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:50700 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:50686 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50700 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:39032 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39048 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:39032 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:39048 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:39032 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:39048 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:48460 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:48460 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:48466 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:48476 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:40584 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40594 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:40584 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40594 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:34180 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:34180 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:46346 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46360 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:59994 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:59994 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:59994 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:59994 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:54650 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:54650 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:42868 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:42868 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:42868 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34860 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:44184 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:44184 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:34272 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34284 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:47848 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:47848 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:60352 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:60364 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:36514 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36516 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:52288 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:52288 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:48758 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48762 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:40242 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:40242 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:60742 - "GET /drives HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60748 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:55876 - "GET /drives HTTP/1.1" 200 OK
+Running command: /home/rukn/hard-drive-manager-fresh/api/../backend/build/hard_drive_manager --json --module=detect with cwd: /home/rukn/hard-drive-manager-fresh/api/..
+INFO:     127.0.0.1:55876 - "GET /drives HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26892]
+INFO:     Stopping reloader process [26864]

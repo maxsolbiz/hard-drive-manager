@@ -7,7 +7,7 @@ const DashboardLayout = () => {
   const [detectionData, setDetectionData] = useState([]);
   const [healthData, setHealthData] = useState([]);
 
-  // Fetch drive detection data (adjust endpoint if needed)
+  // Fetch drive detection data
   useEffect(() => {
     const fetchDetectionData = async () => {
       try {
@@ -70,16 +70,14 @@ const DashboardLayout = () => {
         <ToggleSwitch darkMode={darkMode} onToggle={toggleDarkMode} />
       </header>
 
-      {/* Main Content: Responsive Grid of Drive Cards */}
+      {/* Main Content: Grid of drive cards */}
       <main className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {combinedDriveData.map((drive, index) => (
             <DashboardCard key={index} drive={drive} />
           ))}
           {combinedDriveData.length === 0 && (
-            <p className="col-span-full text-center text-gray-500">
-              No drive data available.
-            </p>
+            <p className="col-span-full text-center text-gray-500">No drive data available.</p>
           )}
         </div>
       </main>
@@ -87,7 +85,7 @@ const DashboardLayout = () => {
       {/* Footer */}
       <footer className="bg-white dark:bg-gray-800 py-4 shadow-inner">
         <div className="container mx-auto text-center text-gray-600 dark:text-gray-400 text-sm">
-          © 2025 Your Company Name. All Rights Reserved.
+          © 2025 <b>Rukn AlAmal TR.</b> All Rights Reserved.
         </div>
       </footer>
     </div>
